@@ -1,0 +1,85 @@
+/*-------RASUL------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.padding {
+  padding-left: 0px !important;
+}
+
+
+
+/*------------Guille------------*/
+/*div  estructura blanco*/
+.colorform {
+  background-color: rgb(255, 255, 255);
+  height: 90%;
+  margin-bottom: 40px;
+  border-radius: 15pt;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+  padding: 40px;
+  font-weight: bolder;
+}
+
+/*---------*/
+#plans {
+  background-color: #037ADE;
+  margin-bottom: 40px;
+  border-radius: 10pt;
+  padding: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+
+.formh2 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.button {
+  border-radius: 30px !important;
+  font-size: large !important;
+  width: 100%;
+  margin-top: 80px;
+  height: 7vh;
+}
+
+input,
+select,
+textarea {
+  border: solid black 1px !important;
+  font-weight: bolder !important;
+  color: black !important;
+}
+
+
+
+@media (min-width:991px) and (max-width:1500px) {
+  .col-md-12 {
+    width: 50% !important;
+    flex: 0 0 auto;
+  }
+
+  .personalWidth {
+    width: 200%;
+  }
+}
+
+
+#detallesplan {
+  max-height: 360px;
+  font-size: medium;
+  padding: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #037ADE;
+  color: white;
+}

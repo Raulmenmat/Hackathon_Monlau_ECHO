@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #E7E7ED !important;
+  min-height: 100vh;
+  background-position: center center;
+  overflow-y: auto;
+
+
+}
+
+
+
+#logo {
+  width: 100%;
+}
+
+.NavBackground {
+  background-color: rgb(255, 255, 255);
+}
+
+.centrado {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+@media only screen and (max-width: 991px) {
+  .centrado {
+
+    justify-content: space-evenly !important;
+  }
+
+  li>div.align-items-center {
+    align-items: left !important;
+  }
+
+  li>div.justify-content-end {
+    justify-content: left;
+
+  }
+
+  .navbar-nav {
+    flex-direction: inherit !important;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .container-fluid {
+    padding-right: 0 !important;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  .container-fluid {
+    padding-left: 30px !important;
+  }
+
+}
+
+
+
+
+
+/*----------search---------------*/
+#search {
+  border: inherit !important;
+}
+
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  background: rgb(255, 255, 255);
+  line-height: 40px;
+  padding: 10px;
+  border-radius: 60px;
+}
+
+.search-input {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  line-height: 40px;
+  width: 0px;
+  float: left;
+  font-size: 14px;
+  transition: 0.7s ease;
+  font-family: sans-serif;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: rgb(211, 211, 211);
+  padding: 12px;
+  border-radius: 50%;
+  float: right;
+  color: rgb(20 55 83);
+  transition: 0.4s ease;
+}
+
+.search-box:hover>.search-input {
+  width: 240px;
+  margin: 0px 8px;
+}
+
+.search-input:focus {
+  width: 240px;
+  margin: 0px 8px;
+}
+
+.search-box:hover>.search-btn {
+  background: #fff;
+}
+
+.search-input:focus+.search-btn {
+  background: #fff;
+}
+/*--------------- QUITAR SEARCH Y AJUSTAR FILTROS ----------------------*/
+@media (max-width: 720px) {
+  .searchform {
+    display: none!important;
+  } 
+  
+  #justifyRM{
+    flex-wrap: wrap;
+    justify-content: center!important;
+  }
+  .medida{
+    height: 38px;
+  }
+  
+}
+
+/*----------------buttons-----------------*/
+
+section>div>section.mb-5 {
+  margin-bottom: 5vw !important;
+
+}
+
+@media (max-width: 852px) {
+  .justify-between {
+    justify-content: space-around !important;
+  }
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/*--------------Organizacion-----------------*/
+section>div.container-fluid.organizacion {
+
+
+  width: 90vw;
+  position: relative;
+
+
+  background-color: rgb(233, 232, 232);
+  padding: 2vw;
+
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+section.Organigrama>div>div>div.card {
+  border-radius: 10pt;
+  height: 30vh;
+}
+
+.navbar-toggler {
+  background: rgb(179, 179, 179) !important;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+}
+
+.imagen {
+  padding: 5%;
+  margin: auto;
+
+}
+
+section>div.row.cover {
+  margin-right: inherit;
+  margin-left: inherit;
+}
+
+#Añadir {
+  padding: 5%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+@media (min-width:992px) and (max-width:1750px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@supports(object-fit: cover) {
+  .cover {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+
+/*----SCROLL-BAR----------*/
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(7, 7, 7, 0.425);
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9393ad;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9393ad;
+}
+
+/*-------------------------------*/
+
+@media (min-width: 992px) and (max-width:1400px) {
+  .col-md-2 {
+    min-width: 120px !important;
+  }
+
+}
